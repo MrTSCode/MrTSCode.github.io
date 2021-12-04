@@ -1,0 +1,154 @@
+.px-formulir {
+    padding-left: 1.5em !important;
+    padding-right: 1.5em !important;
+}
+
+/* Pemesanan */
+.pemesanan.grid-d {
+    grid-template-columns: 1fr;
+}
+
+.pemesanan {
+    margin-bottom: 2em !important;
+}
+
+.pemesanan .panel-info {
+    margin-top: 0px !important;
+}
+
+.pemesanan .formulir-panel {
+    margin-bottom: 0px !important;
+}
+
+.pemesanan .formulir-panel>.grid {
+    justify-content: space-between;
+}
+
+.pemesanan .formulir .grid.fields>.column.field:not(:first-child):not(:last-child) {
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+.pemesanan .formulir .grid.fields>.column.field:first-child {
+    padding-right: .5em;
+}
+
+.pemesanan .formulir .grid.fields>.column.field:last-child {
+    padding-left: .5em;
+}
+
+.pemesanan .formulir .inputGroup input:not([type="radio"]):not([type="checkbox"]):not([required])[placeholder]:not(:placeholder-shown)+label:before {
+    margin: .55rem;
+    transform: translateY(calc(-100% + .17rem)) scale(.65);
+}
+
+.pemesanan .field>.ui.selection.dropdown.multi.icon,
+.pemesanan .field>.ui.selection.dropdown.multi.icon>.menu>.item {
+    padding-left: 2.67142857em !important;
+}
+
+.pemesanan .field>.selection.dropdown.multi.icon>.icon:first-of-type {
+    float: left;
+    cursor: pointer;
+    position: absolute;
+    height: auto;
+    width: 2.67142857em;
+    opacity: 0.5;
+    left: 1px;
+    top: 0.78571429em;
+    margin: 0px;
+}
+
+.pemesanan .field>.selection.dropdown.multi.icon>.ui.header {
+    margin-bottom: .5em;
+}
+
+.pemesanan .field>.ui.selection.dropdown.multi.icon.visible:not(.upward)>.menu.visible {
+    border-top-color: rgba(191, 191, 191, 0.87);
+    border-top-width: 1px !important;
+    border-top-style: dashed;
+}
+
+.pemesanan .field>.ui.selection.dropdown.multi.icon.visible.upward>.menu.visible {
+    border-bottom-color: rgba(191, 191, 191, 0.87);
+    border-bottom-width: 1px !important;
+    border-bottom-style: dashed;
+}
+
+.pemesanan .field>.ui.selection.dropdown.multi.icon>.menu>.item.active.selected {
+    display: none;
+}
+
+/* Khusus Menu Tambahan Aqiqah */
+.pemesanan .formulir #jumlah-menu-tambahan>.inputGroup {
+    height: 100%;
+}
+
+.pemesanan .formulir #jumlah-menu-tambahan input {
+    font-size: 1.45rem;
+    padding: .45em 1rem;
+    height: inherit;
+}
+
+.pemesanan .formulir.column>.ui.segment.transition {
+    transition-property: margin, padding, font-size, border-width;
+}
+
+.pemesanan .formulir.column>.ui.segment.transition:not(.show) {
+    animation: fadeOutUp .3s ease-in;
+    animation-fill-mode: forwards;
+    margin: 0px;
+    padding: 0px;
+    visibility: hidden;
+    font-size: 0px;
+    border-width: 0px;
+    transition: .3s .3s ease-in;
+}
+
+.pemesanan .formulir.column>.ui.segment.transition.show {
+    animation: fadeInUp .3s .3s ease-in;
+    animation-fill-mode: backwards;
+    visibility: visible;
+    transition: .3s ease-in;
+    margin-bottom: 0px;
+}
+
+/* Rincian */
+.pemesanan .rincian .header.grid>.column:not(:first-child):not(:last-child) {
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+}
+
+.pemesanan .rincian .header.grid>.column:first-child {
+    padding-bottom: 0.25em;
+}
+
+.pemesanan .rincian .header.grid>.column:last-child {
+    padding-top: 0.25em;
+}
+
+.pemesanan .rincian .data-rincian {
+    font-weight: normal;
+    float: right;
+}
+
+@media screen and (max-width: 1024px) {
+
+    /* Rincian */
+    .pemesanan .rincian .ui.header.tiny.grid {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    /* Pemesanan */
+    .pemesanan .panel-info .grid>.column {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .pemesanan .step-info {
+        overflow: hidden;
+    }
+}

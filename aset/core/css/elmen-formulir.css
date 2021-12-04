@@ -1,0 +1,304 @@
+/* Checked Radio Button */
+.inputGroup {
+    background-color: transparent;
+    display: block;
+    position: relative;
+}
+
+.inputGroup input[type="radio"]+label,
+.inputGroup input[type="checkbox"]+label {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.inputGroup input[type="radio"]+label,
+.inputGroup input[type="checkbox"]+label {
+    height: 100%;
+    width: fit-content;
+    font-weight: bolder;
+    margin: -.35em -.5em;
+}
+
+.inputGroup input[type="radio"]+label,
+.inputGroup input[type="radio"]+label:after,
+.inputGroup input[type="checkbox"]+label,
+.inputGroup input[type="checkbox"]+label:after {
+    z-index: 2;
+    transition: all .2s ease-in;
+}
+
+.inputGroup input[type="radio"]+label:after,
+.inputGroup input[type="checkbox"]+label:after,
+.inputGroup input[type="radio"],
+.inputGroup input[type="checkbox"] {
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    top: .5em;
+    right: .5em;
+    cursor: pointer;
+}
+
+.inputGroup input[type="radio"]+label:after,
+.inputGroup input[type="checkbox"]+label:after {
+    content: '';
+    border: 2px solid #D1D7DC;
+    background-color: #fff;
+    border-radius: 50%;
+    background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.414 11L4 12.414l5.414 5.414L20.828 6.414 19.414 5l-10 10z' fill='%23fff' fill-rule='nonzero'/%3E%3C/svg%3E ");
+    background-repeat: no-repeat;
+    background-position: -.5px 1px;
+}
+
+.inputGroup input[type="checkbox"]+label:after {
+    border-radius: .25em;
+}
+
+.inputGroup input[type="radio"],
+.inputGroup input[type="checkbox"] {
+    visibility: hidden;
+}
+
+.inputGroup input[type="radio"]:checked+label:after,
+.inputGroup input[type="checkbox"]:checked+label:after {
+    background-color: #21ba45;
+    border-color: #21ba45;
+    color: #fff;
+}
+
+/* Text, Number, Email and Textarea */
+.inputGroup input:not([type="radio"]):not([type="checkbox"]),
+.inputGroup textarea {
+    box-sizing: border-box;
+    color: #999999;
+    transition: color .2s linear;
+}
+
+.inputGroup input:not([type="radio"]):not([type="checkbox"]):focus,
+.inputGroup textarea:focus {
+    color: var(--secondary-color);
+}
+
+.inputGroup.basic input:not([type="radio"]):not([type="checkbox"]),
+.inputGroup.basic textarea {
+    border-width: 0px 0px 2px;
+    border-radius: 0px;
+    padding: 0.67857143em 0em;
+}
+
+.inputGroup input:not([type="radio"]):not([type="checkbox"])+label,
+.inputGroup textarea+label,
+.inputGroup input:not([type="radio"]):not([type="checkbox"])+label:before,
+.inputGroup textarea+label:before {
+    display: flex;
+    align-self: center;
+}
+
+.inputGroup input:not([type="radio"]):not([type="checkbox"])+label,
+.inputGroup textarea+label {
+    position: absolute;
+    height: 100%;
+    pointer-events: none;
+    font-weight: 300;
+}
+
+.inputGroup input:not([type="radio"]):not([type="checkbox"])+label:before,
+.inputGroup textarea+label:before {
+    content: attr(placeholder);
+    color: #999999;
+    margin: 0 calc(1em + 2px);
+    white-space: nowrap;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .2s;
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transform-origin: left center;
+    -ms-transform-origin: left center;
+    transition-property: all;
+    transition-duration: .2s;
+    transition-timing-function: ease-out;
+    transform-origin: left center;
+}
+
+.inputGroup.basic input:not([type="radio"]):not([type="checkbox"])+label:before,
+.inputGroup.basic textarea+label:before {
+    margin: 0px;
+}
+
+.inputGroup input:not([type="radio"]):not([type="checkbox"])::placeholder {
+    opacity: 0.5;
+}
+
+.inputGroup input:not([type="radio"]):not([type="checkbox"])::placeholder {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.inputGroup input:not([type="radio"]):not([type="checkbox"]):focus::placeholder {
+    visibility: visible;
+    opacity: 0.75;
+    transition-property: visibility, color, opacity;
+    transition-delay: .2s;
+    transition-duration: .2s;
+    transition-timing-function: ease-in;
+}
+
+.inputGroup input:not([type="radio"]):not([type="checkbox"]):focus+label:before,
+.inputGroup textarea:focus+label:before,
+.inputGroup input:not([type="radio"]):not([type="checkbox"]):active+label:before,
+.inputGroup textarea:active+label:before,
+.inputGroup input:not([type="radio"]):not([type="checkbox"])[required]:valid+label:before,
+.inputGroup textarea[required]:valid+label:before,
+.inputGroup input[type="email"]:not(:placeholder-shown)+label:before,
+.inputGroup input:not([type="radio"]):not([type="checkbox"]):not([required])[placeholder]:not(:placeholder-shown)+label:before {
+    background: white;
+    color: #85B7D9;
+    font-weight: 600;
+    padding: 0px .25rem;
+    margin: 0 calc(1em + 2px - .25rem);
+    -webkit-transform: translateY(calc(-100% + .17rem)) scale(.8);
+    -ms-transform: translateY(calc(-100% + .17rem)) scale(.8);
+    transform: translateY(calc(-100% + .17rem)) scale(.8);
+}
+
+.inputGroup.basic input:not([type="radio"]):not([type="checkbox"]):focus+label:before,
+.inputGroup.basic textarea:focus+label:before,
+.inputGroup.basic input:not([type="radio"]):not([type="checkbox"]):active+label:before,
+.inputGroup.basic textarea:active+label:before,
+.inputGroup.basic input:not([type="radio"]):not([type="checkbox"])[required]:valid+label:before,
+.inputGroup.basic textarea[required]:valid+label:before,
+.inputGroup.basic input[type="email"]:not(:placeholder-shown)+label:before,
+.inputGroup.basic input:not([type="radio"]):not([type="checkbox"]):not([required])[placeholder]:not(:placeholder-shown)+label:before {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Valid */
+.inputGroup:not(.basic) input:not([type="radio"]):not([type="checkbox"])[required]:valid,
+.inputGroup:not(.basic) input:not([type="radio"]):not([type="checkbox"]):not([required])[placeholder]:not(:placeholder-shown),
+.inputGroup:not(.basic) textarea:valid {
+    border: 1px solid var(--success-color);
+}
+
+.inputGroup.basic input:not([type="radio"]):not([type="checkbox"])[required]:valid,
+.inputGroup.basic input:not([type="radio"]):not([type="checkbox"]):not([required])[placeholder]:not(:placeholder-shown),
+.inputGroup.basic textarea:valid {
+    border-bottom: 2px solid var(--success-color);
+}
+
+.inputGroup input:not([type="radio"]):not([type="checkbox"])[required]:valid+label:before,
+.inputGroup input:not([type="radio"]):not([type="checkbox"]):not([required])[placeholder]:not(:placeholder-shown)+label:before,
+.inputGroup textarea:valid+label:before {
+    content: attr(alt);
+    color: var(--success-color);
+}
+
+/* Unvalid */
+/* .inputGroup:not(.basic) input:not([type="radio"]):not([type="checkbox"]):not(:valid),
+.inputGroup:not(.basic) textarea:not(:valid) {
+    border: 1px solid var(--error-color);
+} */
+
+/* INDEVELOPMENT WEBFLOW */
+/* @keyframes gradient {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+.inputGroup.webflow {
+    --border-width: 0.5px;
+    background: linear-gradient(to right, #b294ff, #57e6e6, #feffb8, #57e6e6, #b294ff, #57e6e6);
+    background-position: 0% 0%;
+    background-size: 100vw;
+    animation: gradient 3s linear infinite;
+}
+
+.inputGroup.webflow:not(.basic) {
+    border-radius: var(--border-radius);
+}
+
+.inputGroup.webflow input:not([type="radio"]):not([type="checkbox"]):focus,
+.inputGroup.webflow textarea:focus {
+    border-color: transparent;
+    border-style: solid;
+    border-width: 0px;
+    margin: 1px 0.5px;
+    border-radius: inherit;
+}
+
+.inputGroup.webflow.basic input:not([type="radio"]):not([type="checkbox"]):focus,
+.inputGroup.webflow.basic textarea:focus {
+    margin: 0px 0px 2px;
+} */
+
+/* Number Type Button */
+.inputGroup.number {
+    --bawh-input-number: 1.85rem;
+    --bapad-input-number: .25rem;
+    --babor-input-number: 2.5px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: calc((var(--bawh-input-number) + var(--bapad-input-number) + var(--babor-input-number)));
+    margin-right: calc((var(--bawh-input-number) + var(--bapad-input-number) + var(--babor-input-number)));
+}
+
+.inputGroup.number:before,
+.inputGroup.number:after {
+    position: absolute;
+    width: var(--bawh-input-number);
+    height: var(--bawh-input-number);
+    padding: var(--bapad-input-number);
+    border-radius: 50%;
+    border: var(--babor-input-number) solid var(--success-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Icons;
+    color: var(--success-color);
+    z-index: 1;
+    box-sizing: border-box;
+    font-size: .75rem;
+    cursor: pointer;
+    pointer-events: auto;
+    opacity: 0.8;
+}
+
+.inputGroup.number:before {
+    left: calc((var(--bawh-input-number) + var(--bapad-input-number) + var(--babor-input-number)) *-1);
+    content: "\f068";
+}
+
+.inputGroup.number:after {
+    right: calc((var(--bawh-input-number) + var(--bapad-input-number) + var(--babor-input-number)) *-1);
+    content: "\f067";
+}
+
+.inputGroup.number:hover:before,
+.inputGroup.number:hover:after {
+    opacity: 1;
+}
+
+.inputGroup.number.b-d:before,
+.inputGroup.number.a-d:after {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.inputGroup.number input[type="number"]::-webkit-outer-spin-button,
+.inputGroup.number input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+.inputGroup.number input[type="number"] {
+    -moz-appearance: textfield;
+}

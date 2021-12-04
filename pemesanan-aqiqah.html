@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="apple-touch-icon" sizes="180x180" href="aset/gambar/logo/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="aset/gambar/logo/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="aset/gambar/logo/favicon/favicon-16x16.png">
+        <link rel="manifest" href="aset/gambar/logo/favicon/site.webmanifest">
+        <title>Hikmah Aqiqah | Pemesanan Produk</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css" integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="aset/framework/semantic-ui.css">
+        <link rel="stylesheet" href="aset/plugin/Morphext/morphext.css">
+        <link rel="stylesheet" href="aset/plugin/Morphist/morphist.css">
+        <link rel="stylesheet" href="aset/core/css/utilitas.css">
+        <link rel="stylesheet" href="aset/core/css/inti.css">
+        <!-- Reload Area -->
+        <link rel="stylesheet" href="aset/core/css/step.css">
+        <link rel="stylesheet" href="aset/core/css/elmen-formulir.css">
+        <!-- <link rel="stylesheet" href="aset/plugin/adaptive-placeholders.css"> -->
+        <link rel="stylesheet" href="aset/page/css/pemesanan-aqiqah.css">
+    </head>
+<body>
+    <!-- Header -->
+    <header class="ui top menu borderless fixed">
+        <a href="index.html" class="header item">
+            <img src="aset/gambar/logo/logo-big.png" alt="Hikmah Aqiqah" id="logo">
+        </a>
+        <nav class="item menu">
+            <div class="item">
+                <div class="header">Layanan</div>
+                <div class="popers">
+                    <div class="menu grid">
+                        <div class="ui item icon tiny header">
+                            <i class="food icon"></i>
+                            <div class="item-name">Menu</div>
+                            <div class="sub header">Lezat Yang Menggugah Lidah</div>
+                        </div>
+                        <div class="ui item icon tiny header">
+                            <i class="sheep icon"></i>
+                            <div class="item-name">Aqiqah</div>
+                            <div class="sub header">Halalnya Yang Terjamin</div>
+                        </div>
+                    </div>
+                    <div class="text-desc">
+                        <div class="ui header rotation-container">
+                            Aqiqahan kenapa Hikmah Aqiqah?
+                            <span class="js-rotating">Olahan Nikmat Yang Terjamin, Paketnya Sesuai Dengan Kebutuhan Anda, Ya Tentu Hikmah Aqiqah</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="header">Tentang Kami</div>
+                <div class="popers">
+                    <div class="menu grid">
+                        <div class="ui item icon tiny header">
+                            <i class="marker icon"></i>
+                            <div class="item-name">Lokasi</div>
+                            <div class="sub header">Peta & Alamat</div>
+                        </div>
+                        <div class="ui item icon tiny header">
+                            <i class="call icon"></i>
+                            <div class="item-name">Kontak</div>
+                            <div class="sub header">Telepon & Media Sosial</div>
+                        </div>
+                        <div class="ui item icon tiny header">
+                            <i class="icons">
+                                <i class="user icon"></i>
+                                <i class="top corner trash icon"></i>
+                            </i>
+                            <div class="item-name">Juru Masak</div>
+                            <div class="sub header">Handal & Terpercaya</div>
+                        </div>
+                    </div>
+                    <div class="text-desc">
+                        <div class="ui header rotation-container">
+                            <span class="js-rotating">Bagaimana Hikmah aqiqah bekerja?, Dimanakah lokasi kami?, Cakupan area mana saja yang dapat kami jangkau?, Semuanya dapat anda temukan di sini</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="item">
+                <button class="ui circular positive button" id="reservasi">RESERVASI</button>
+            </a>
+        </nav>
+    </header>
+    <!-- pemesanan -->
+    <div class="pemesanan py-5 grid-d">
+        <div class="ui secondary segment basic panel-info py-1 my-1">
+            <div class="ui container grid one column header green">
+                <div class="column left aligned">
+                    Bantu Kami Untuk Mengetahui Kebutuhanmu
+                    <div class="sub header">
+                        Mohon isi data berikut
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui container step-info my-1">
+            <div class="ui four mini ordered steps unstackable">
+                <div class="step completed">
+                    <i class="hand point up icon"></i>
+                    <div class="content">
+                        <div class="title">Model Aqiqah</div>
+                        <div class="description">Pilih model aqiqah</div>
+                    </div>
+                </div>
+                <div class="step active">
+                    <i class="shoping cart icon"></i>
+                    <div class="content">
+                        <div class="title">Produk Aqiqah</div>
+                        <div class="description">Sesuaikan kebutuhan aqiqah</div>
+                    </div>
+                </div>
+                <div class="step disabled">
+                    <i class="address book icon"></i>
+                    <div class="content">
+                        <div class="title">Data Aqiqah</div>
+                        <div class="description">Isi data pemesan, lokasi, anak dan orang tua</div>
+                    </div>
+                </div>
+                <div class="step disabled">
+                    <i class="payment icon"></i>
+                    <div class="content">
+                        <div class="title">Model Pembayaran</div>
+                        <div class="description">Pilih Model Pembayaran</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="formulir-panel my-1">
+            <div class="ui container stackable grid" id="step-2">
+                <div class="ui column formulir nine wide computer ten wide tablet">
+                    <div class="ui segment basic px-formulir">
+                        <div class="ui grid fields" id="jumlah-peserta">
+                            <div class="ui column header tiny eleven wide computer ten wide tablet field">
+                                Peserta Aqiqah
+                            </div>
+                            <div class="ui column five wide computer six wide tablet field">
+                                <div class="ui input inputGroup fluid number">
+                                    <input type="text" name="jumlah_anak" placeholder="1" value="1">
+                                    <label placeholder="Anak" alt="Anak"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui segment px-formulir basic">
+                        <div class="ui grid" id="jumlah-kambing">
+                            <div class="ui header tiny column six wide computer four wide tablet">Jumlah Kambing</div>
+                            <div class="ui column ten wide computer twelve wide tablet">
+                                <div class="ui grid two column fields">
+                                    <div class="ui column field">
+                                        <div class="ui input inputGroup fluid number">
+                                            <input type="text" name="jumlah_jantan" placeholder="0">
+                                            <label placeholder="Jantan" alt="Jantan Dipesan"></label>
+                                        </div>
+                                    </div>
+                                    <div class="ui column field">
+                                        <div class="ui input inputGroup fluid number">
+                                            <input type="text" name="jumlah_betina" placeholder="0">
+                                            <label placeholder="Betina" alt="Betina Dipesan"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui segment basic">
+                        <div class="inputGroup p-1">
+                            <input id="menuTambahanCheckbox" type="checkbox"/>
+                            <label for="menuTambahanCheckbox">Menu Tambahan</label>
+                        </div>
+                    </div>
+                    <div class="ui segment px-formulir basic transition">
+                        <div class="ui grid fields" id="tambahan">
+                            <div class="ui eleven wide computer ten wide tablet column field">
+                                <div class="ui selection dropdown multi icon fluid" tabindex="0">
+                                    <div class="ui small header">Paket Tambahan</div>
+                                    <input type="hidden" name="menu_tambahan" id="menu_tambahan" required="">
+                                    <i class="box icon"></i>
+                                    <i class="dropdown icon"></i>
+                                    <div class="default text">Pilih Menu Tambahan</div>
+                                    <div class="menu transition hidden" tabindex="-1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui five wide computer six wide tablet column field right floated" id="jumlah-menu-tambahan">
+                                <div class="ui input inputGroup fluid number">
+                                    <input type="text" name="jumlah_menu_tambahan" placeholder="0">
+                                    <label placeholder="Kotak" alt="Kotak Dipesan"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui column rincian five wide computer six wide tablet">
+                    <div class="ui segment">
+                        <div class="ui header mb-half">Ringkasan Pesanan</div>
+                        <div class="ui one column grid header tiny grey">
+                            <div class="ui column">Model Aqiqah <span class="data-rincian" id="model-aqiqah"></span></div>
+                            <div class="ui column">Kambing <span class="data-rincian ui sub header" id="jenis-kambing"></span></div>
+                            <div class="ui column">Jantan (<span id="jumlah-jantan" class="jumlah-rincian"></span> ekor) <span class="data-rincian nominal"></span></div>
+                            <div class="ui column">Betina (<span id="jumlah-betina" class="jumlah-rincian"></span> ekor) <span class="data-rincian nominal"></span></div>
+                            <div class="ui column">Menu Tambahan (<span id="jumlah-tambahan" class="jumlah-rincian"></span> kotak) <span class="data-rincian nominal"></span></div>
+                            <div class="ui divider row p-0"></div>
+                            <div class="ui column header m-0">Total Harga <span class="data-rincian nominal" id="total-harga"></span></div>
+                        </div>
+                        <div class="ui grid">
+                            <div class="column">
+                                <div class="ui animated button large right fluid disabled" tabindex="0" id="lanjut-step-3">
+                                    <div class="visible content">Lanjutkan Ke <i class="right chevron icon"></i></div>
+                                    <div class="hidden content">
+                                        Data Aqiqah
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="ui header tiny m-0 mb-half" id="model-aqiqah">Model Aqiqah <div class="sub header"></div></div>
+                        <div class="ui header tiny m-0 mb-half" id="nama-paket-kambing">Paket Kambing <div class="sub header"></div></div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="my-1">
+        <div class="ui container grid header">
+            <div class="ui column eight wide computer eight wide tablet sixteen wide mobile list  row py-4">
+                <div class="ui column produk-kami eight wide">
+                    <div class="item">
+                        <a href="#">Menu Masakan</a>
+                    </div>
+                    <div class="item">
+                        <a href="#">Paket Aqiqah</a>
+                    </div>
+                </div>
+                <div class="ui column tentang-kami eight wide">
+                    <div class="item">
+                        <a href="#">Hikmah Aqiqah</a>
+                    </div>
+                    <div class="item">
+                        <a href="#">Lokasi</a>
+                    </div>
+                    <div class="item">
+                        <a href="#">Koki</a>
+                    </div>
+                    <div class="item">
+                        <a href="#">Kontak</a>
+                    </div>
+                </div>
+            </div>
+            <div class="ui column eight wide computer eight wide tablet sixteen wide mobile info row py-4">
+                <div class="ui column eight wide computer six wide tablet eight wide mobile partnership">
+                    <h3>Partnership</h3>
+                    <img src="aset/gambar/logo/human-initiatif.png" alt="Human Initiatif" class="ui image small my-1">
+                </div>
+                <div class="ui column eight wide computer ten wide tablet eight wide mobile logo center aligned row">
+                    <img src="aset/gambar/logo/logo-big-in-wthite.png" alt="Hikmah Aqiqah" class="ui image centered small">
+                    <div class="ui column sixteen wide medsos">
+                        <div class="circular basic ui large icon blue button"><i class="facebook square icon"></i></div>
+                        <div class="circular basic ui large icon teal button"><i class="twitter icon"></i></div>
+                        <div class="circular basic ui large icon positive button"><i class="whatsapp icon"></i></div>
+                        <div class="circular basic ui large icon instagram button"><i class="instagram icon"></i></div>
+                    </div>
+                </div>
+            </div>
+            <small id="copyright">&copy; <span></span> Copyright, Hikmah Aqiqah</small>
+        </div>
+    </footer>
+</body>
+<script src="aset/framework/jquery.min.js"></script>
+<script src="aset/framework/semantic-ui.min.js"></script>
+<script src="aset/plugin/Morphext/morphext.min.js"></script>
+<script src="aset/plugin/Morphist/morphist.min.js"></script>
+<script src="aset/core/js/utilitas.js"></script>
+<script src="aset/core/js/inti.js"></script>
+<!-- <script src="aset/page/js/step.js"></script> -->
+<!-- Reload Script -->
+<script src="aset/page/js/pemesanan-aqiqah.js"></script>
+</html>

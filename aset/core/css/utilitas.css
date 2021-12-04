@@ -1,0 +1,194 @@
+/* Padding X Axis */
+.px-1 {
+    padding: 0px 1em !important;
+}
+
+.px-2 {
+    padding: 0px 2em !important;
+}
+
+.px-3 {
+    padding: 0px 3em !important;
+}
+
+.px-4 {
+    padding: 0em 4px !important;
+}
+
+.px-5 {
+    padding: 0em 5px !important;
+}
+
+.px-6 {
+    padding: 0em 6px !important;
+}
+
+/* Padding Y Axis */
+.py-1 {
+    padding: 1em 0px !important;
+}
+
+.py-2 {
+    padding: 2em 0px !important;
+}
+
+.py-3 {
+    padding: 3em 0px !important;
+}
+
+.py-4 {
+    padding: 4em 0px !important;
+}
+
+.py-5 {
+    padding: 5em 0px !important;
+}
+
+.py-6 {
+    padding: 6em 0px !important;
+}
+
+/* Padding X & Y Axis */
+.p-0 {
+    padding: 0em !important;
+}
+
+.p-1 {
+    padding: 1em !important;
+}
+
+.p-2 {
+    padding: 2em !important;
+}
+
+.p-3 {
+    padding: 3em !important;
+}
+
+.p-4 {
+    padding: 4em !important;
+}
+
+/* Padding Bottom */
+.pb-1 {
+    padding-bottom: 1em !important;
+}
+
+.pb-2 {
+    padding-bottom: 2em !important;
+}
+
+.pb-3 {
+    padding-bottom: 3em !important;
+}
+
+.pb-4 {
+    padding-bottom: 4em !important;
+}
+
+/* Margin X Axis */
+.mx-1 {
+    margin: 0px 1em !important;
+}
+
+.mx-2 {
+    margin: 0px 2em !important;
+}
+
+.mx-3 {
+    margin: 0px 3em !important;
+}
+
+.mx-4 {
+    margin: 0px 4em !important;
+}
+
+/* Margin Y Axis */
+.my-1 {
+    margin: 1em 0px !important;
+}
+
+.my-2 {
+    margin: 2em 0px !important;
+}
+
+.my-3 {
+    margin: 3em 0px !important;
+}
+
+.my-4 {
+    margin: 4em 0px !important;
+}
+
+.my-5 {
+    margin: 5em 0px !important;
+}
+
+.my-6 {
+    margin: 6em 0px !important;
+}
+
+/* Margin X & Y Axis */
+.m-0 {
+    margin: 0em !important;
+}
+
+.m-1 {
+    margin: 1em !important;
+}
+
+.m-2 {
+    margin: 2em !important;
+}
+
+.m-3 {
+    margin: 3em !important;
+}
+
+.m-4 {
+    margin: 4em !important;
+}
+
+/* Margin Bottom */
+.mb-half {
+    margin-bottom: .5em !important;
+}
+
+.mb-1 {
+    margin-bottom: 1em !important;
+}
+
+.mb-2 {
+    margin-bottom: 2em !important;
+}
+
+.mb-3 {
+    margin-bottom: 3em !important;
+}
+
+.mb-4 {
+    margin-bottom: 4em !important;
+}
+
+/* Animasi */
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    25% {
+        transform: rotate(90deg)
+    }
+
+    50% {
+        transform: rotate(180deg)
+    }
+
+    75% {
+        transform: rotate(270deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}

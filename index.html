@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="aset/gambar/logo/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="aset/gambar/logo/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="aset/gambar/logo/favicon/favicon-16x16.png">
+    <link rel="manifest" href="aset/gambar/logo/favicon/site.webmanifest">
+    <title>Hikmah Aqiqah | Aqiqah One Stop Service</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css" integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="aset/framework/semantic-ui.css">
+    <link rel="stylesheet" href="aset/plugin/Morphext/morphext.css">
+    <link rel="stylesheet" href="aset/plugin/Morphist/morphist.css">
+    <link rel="stylesheet" href="aset/core/css/utilitas.css">
+    <link rel="stylesheet" href="aset/core/css/inti.css">
+    <!-- Reload Area -->
+    <link rel="stylesheet" href="aset/core/css/step.css">
+    <link rel="stylesheet" href="aset/core/css/elmen-formulir.css">
+    <link rel="stylesheet" href="aset/page/css/utama.css">
+</head>
+<body>
+    <section class="ui sidebar top segment basic" id="form-reservasi">
+        <div class="ui grid container center aligned">
+            <div class="ui fourteen wide column segment attached p-2">
+                <div class="ui secondary segment panel-info basic">
+                    <div class="ui grid two column header green">
+                        <div class="column left aligned fourteen wide tablet">
+                            Beritahu Kami Tentang Kebutuhanmu
+                            <div class="sub header">
+                                Mohon isi data berikut
+                            </div>
+                        </div>
+                        <div class="column right floated right aligned two wide tablet">
+                            <i class="close icon grey"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui four mini ordered steps unstackable my-2">
+                    <div class="step active">
+                        <i class="hand point up icon"></i>
+                        <div class="content">
+                            <div class="title">Model Aqiqah</div>
+                            <div class="description">Pilih model aqiqah</div>
+                        </div>
+                    </div>
+                    <div class="step disabled">
+                        <i class="shoping cart icon"></i>
+                        <div class="content">
+                            <div class="title">Produk Aqiqah</div>
+                            <div class="description">Sesuaikan kebutuhan aqiqah</div>
+                        </div>
+                    </div>
+                    <div class="step disabled">
+                        <i class="address book icon"></i>
+                        <div class="content">
+                            <div class="title">Data Aqiqah</div>
+                            <div class="description">Isi data pemesan, lokasi, anak dan orang tua</div>
+                        </div>
+                    </div>
+                    <div class="step disabled">
+                        <i class="payment icon"></i>
+                        <div class="content">
+                            <div class="title">Model Pembayaran</div>
+                            <div class="description">Pilih Model Pembayaran</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui header large my-1">Pilih Jenis Akikah</div>
+                <div class="ui cards three">
+                    <div class="card green">
+                        <div class="inputGroup">
+                            <input id="radio1" value="tebar" name="model_akikah" type="radio" />
+                            <label for="radio1">Tebar Aqiqah</label>
+                        </div>
+                        <div class="content center aligned">
+                            <img src="aset/gambar/ilustrasi-kecil/f-donasi-001.png" alt="Tebar Aqiqah" class="ui image tiny my-2">
+                        </div>
+                        <div class="extra content center aligned">
+                            Tebar Aqiqah
+                        </div>
+                    </div>
+                    <div class="card green">
+                        <div class="inputGroup">
+                            <input id="radio2" value="mandiri" name="model_akikah" type="radio" />
+                            <label for="radio2">Tebar Aqiqah</label>
+                        </div>
+                        <div class="content center aligned">
+                            <img src="aset/gambar/ilustrasi-kecil/f-mengantar-makanan-001.png" alt="Aqiqah Mandiri" class="ui image tiny my-2">
+                        </div>
+                        <div class="extra content center aligned">
+                            Aqiqah Mandiri
+                        </div>
+                    </div>
+                    <div class="card green">
+                        <div class="inputGroup">
+                            <input id="radio3" value="event" name="model_akikah" type="radio" />
+                            <label for="radio3">Event Orgenaizer</label>
+                        </div>
+                        <div class="content center aligned">
+                            <img src="aset/gambar/ilustrasi-kecil/f-tanggal-bayi-001.png" alt="Event Orgenaizer" class="ui image tiny my-2">
+                        </div>
+                        <div class="extra content center aligned">
+                            Event Orgenaizer
+                        </div>
+                    </div>
+                </div>
+                <a href="reservasi/2" class="ui button positive my-1 disabled" tabindex="0" id="lanjutKeStep-2">
+                    Selanjutnya
+                    <i class="right arrow icon"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <div class="pusher">
+        <!-- Header -->
+        <header class="ui top menu borderless fixed">
+            <a href="index.html" class="header item">
+                <img src="aset/gambar/logo/logo-big.png" alt="Hikmah Aqiqah" id="logo">
+            </a>
+            <nav class="item menu">
+                <div class="item">
+                    <div class="header">Layanan</div>
+                    <div class="popers">
+                        <div class="menu grid">
+                            <div class="ui item icon tiny header">
+                                <i class="food icon"></i>
+                                <div class="item-name">Menu</div>
+                                <div class="sub header">Lezat Yang Menggugah Lidah</div>
+                            </div>
+                            <div class="ui item icon tiny header">
+                                <i class="sheep icon"></i>
+                                <div class="item-name">Aqiqah</div>
+                                <div class="sub header">Halalnya Yang Terjamin</div>
+                            </div>
+                        </div>
+                        <div class="text-desc">
+                            <div class="ui header rotation-container">
+                                Aqiqahan kenapa Hikmah Aqiqah?
+                                <span class="js-rotating">Olahan Nikmat Yang Terjamin, Paketnya Sesuai Dengan Kebutuhan Anda, Ya Tentu Hikmah Aqiqah</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="header">Tentang Kami</div>
+                    <div class="popers">
+                        <div class="menu grid">
+                            <div class="ui item icon tiny header">
+                                <i class="marker icon"></i>
+                                <div class="item-name">Lokasi</div>
+                                <div class="sub header">Peta & Alamat</div>
+                            </div>
+                            <div class="ui item icon tiny header">
+                                <i class="call icon"></i>
+                                <div class="item-name">Kontak</div>
+                                <div class="sub header">Telepon & Media Sosial</div>
+                            </div>
+                            <div class="ui item icon tiny header">
+                                <i class="icons">
+                                    <i class="user icon"></i>
+                                    <i class="top corner trash icon"></i>
+                                </i>
+                                <div class="item-name">Juru Masak</div>
+                                <div class="sub header">Handal & Terpercaya</div>
+                            </div>
+                        </div>
+                        <div class="text-desc">
+                            <div class="ui header rotation-container">
+                                <span class="js-rotating">Bagaimana Hikmah aqiqah bekerja?, Dimanakah lokasi kami?, Cakupan area mana saja yang dapat kami jangkau?, Semuanya dapat anda temukan di sini</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="item">
+                    <button class="ui circular positive button" id="reservasi">RESERVASI</button>
+                </a>
+            </nav>
+        </header>
+        <!-- Showcase -->
+        <div class="showcase grid py-5">
+            <div class="block-rotators px-2 grid">
+                <div class="block-rotator-1">
+                    <h1 class="ui huge header">One Stop Solution</h1>
+                    <p>Aqiqah lebih praktis, cepat dan dapat disesuaikan dengan kebutuhan anda</p>
+                    <a class="ui animated fade button primary" tabindex="0">
+                        <div class="visible content">Baca Selengkapnya</div>
+                        <div class="hidden content">
+                        Tentang OSS
+                        </div>
+                    </a>
+                </div>
+                <div class="block-rotator-2">
+                    <h1 class="ui huge header"><span>Hikmah Aqiqah</span> it's Your Aqiqah <span>Solution</span></h1>
+                    <p>Aqiqah murah dan halalnya terpercaya tanpa ribet dalam genggaman anda</p>
+                    <a class="ui animated fade button primary" tabindex="0">
+                        <div class="visible content">Baca Selengkapnya</div>
+                        <div class="hidden content">
+                        Tentang HA
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="image">
+                <img src="aset/gambar/ilustrasi-keluarga-baru.png" alt="" class="ui image centered">
+            </div>
+        </div>
+        <!-- Layanan -->
+        <div class="layanan my-1">
+            <div class="ui grid centered panel container px-1">
+                <div class="ui sixteen wide column">
+                    <div class="ui segment grid three column stackable flex-wrap divided raised">
+                        <div class="column">
+                            <h3 class="ui header">
+                                <img src="aset/gambar/ilustrasi-kecil/005-donation-1.png" alt="">
+                                <div class="content">
+                                    Tebar Aqiqah
+                                    <div class="sub header">Berbagi produk aqiqah dengan anak yatim dan duafa melalui <b>Human Initiative</b></div>
+                                </div>
+                            </h3>
+                            <a href="#" class="link">Lebih lanjut <i class="icon right arrow"></i></a>
+                        </div>
+                        <div class="column">
+                            <h3 class="ui header">
+                                <img src="aset/gambar/ilustrasi-kecil/002-takeaway.png">
+                                <div class="content">
+                                    Aqiqah Mandiri
+                                    <div class="sub header">Pendistribusian produk aqiqah diserahkan sepenuhnya kepada pemesan</div>
+                                </div>
+                            </h3>
+                            <a href="#" class="link">Lebih lanjut <i class="icon right arrow"></i></a>
+                        </div>
+                        <div class="column">
+                            <h3 class="ui header">
+                                <img src="aset/gambar/ilustrasi-kecil/006-calendar.png">
+                                <div class="content">
+                                    Event Orgenaizer
+                                    <div class="sub header">Undangan, prosesi acara aqiqah, hingga dekor tempat semuanya disiapkan oleh <b>Hikmah Aqiqah</b></div>
+                                </div>
+                            </h3>
+                            <a href="#" class="link">Lebih lanjut <i class="icon right arrow"></i></a>
+                        </div>
+                        <div class="column">
+                            <h3 class="ui header">
+                                <img src="aset/gambar/ilustrasi-kecil/042-sheep.png">
+                                <div class="content">
+                                    Kambing Aqiqah
+                                    <div class="sub header">Kambing aqiqah sehat dikirim dari peternakan <b>Hikmah</b> kami, kepada pemesan</div>
+                                </div>
+                            </h3>
+                            <a href="#" class="link">Lebih lanjut <i class="icon right arrow"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Dinamis -->
+        <div class="ui container dinamis grid-d py-6 my-1">
+            <div class="block-dinamis px-2">
+                <h1 class="ui huge header">Aqiqah Lebih <b>Eco Dinamis</b></h1>
+                <p>Ekosistem yang terbaik kami pastikan mulai dari perawatan kambing, pemotongan, memasak hingga pendistribusian produk aqiaqah sepenuhnya terkontrol oleh kami dengan para staff terbaik kami yang dimulai dari perternakan sehat, penyembelihan cepat, koki handal hingga pengiriman produk kami.</p>
+                <a class="ui animated fade button primary" tabindex="0">
+                    <div class="visible content">Baca Selengkapnya</div>
+                    <div class="hidden content">
+                    Tentang Eco Dinamis
+                    </div>
+                </a>
+            </div>
+            <div class="block-panel grid-d px-2">
+                <div class="panel" id="perternakan">
+                    <div class="ui header">Pertenakan</div>
+                    <img src="aset/gambar/ternak.png" alt="Perternakan" class="ui image small centered">
+                </div>
+                <div class="panel" id="potong">
+                    <div class="ui header">Pemotongan</div>
+                    <img src="aset/gambar/potong.png" alt="Potong" class="ui image tiny t70 centered">
+                </div>
+                <div class="panel" id="masak">
+                    <div class="ui header">Masak</div>
+                    <img src="aset/gambar/masak.png" alt="Masak" class="ui image small centered">
+                </div>
+                <div class="panel" id="pengiriman">
+                    <div class="ui header">Pengiriman</div>
+                    <img src="aset/gambar/kirim.png" alt="Kirim" class="ui image small centered">
+                </div>
+            </div>
+        </div>
+        <div class="ui divider"></div>
+        <!-- Produk -->
+        <div class="produk py-4 my-1">
+            <div class="ui one column grid padded">
+                <div class="ui column">
+                    <div class="ui header large icon center aligned py-1">
+                        <i class="icon sheep-sleep"></i>
+                        Paket Kambing
+                    </div>
+                </div>
+            </div>
+            <div class="ui grid centered container my-1">
+                <div class="ui fourteen wide column">
+                    <div class="ui cards centered py-1 flex-wrap stackable">
+                        <div class="ui paket-kambing card center aligned raised">
+                            <div class="block-content"></div>
+                            <div class="ui content">
+                                <div class="ui green ribbon label">Kambing Super</div>
+                                <span>*Rincian/kambing</span>
+                            </div>
+                            <div class="ui content center aligned px-1">
+                                <div class="ui header">
+                                    Satu Menu 
+                                    <p class="sub header">Gulai Semua (130 Porsi)</p>
+                                </div>
+                                <div class="ui horizontal divider">Atau</div>
+                                <div class="ui header">
+                                    Dua Menu
+                                    <p class="sub header">Gulai (90 Porsi)</p>
+                                    <p class="sub header">Sate (330 Tusuk)</p>
+                                </div>
+                            </div>
+                            <div class="ui content">
+                                <div class="ui two column grid center aligned divided vertically">
+                                    <div class="ui column"><div class="ui header pink">Betina</div><div class="ui tiny header">Rp. 2.400.000,-</div></div>
+                                    <div class="ui column"><div class="ui header blue">Jantan</div><div class="ui tiny header">Rp. 2.800.000,-</div></div>
+                                </div>
+                            </div>
+                            <div class="ui content">
+                                <div class="ui fluid button blue" data-kambing="super">Pesan</div>
+                            </div>
+                        </div>
+                        <div class="ui paket-kambing card center aligned raised">
+                            <div class="block-content"></div>
+                            <div class="ui content">
+                                <div class="ui olive ribbon label">Kambing Combo</div>
+                                <span>*Rincian/kambing</span>
+                            </div>
+                            <div class="ui content center aligned px-1">
+                                <div class="ui header">
+                                    Satu Menu
+                                    <p class="sub header">Gulai Semua (110 Porsi)</p>
+                                </div>
+                                <div class="ui horizontal divider">Atau</div>
+                                <div class="ui header">
+                                    Dua Menu
+                                    <p class="sub header">Gulai (70 Porsi)</p>
+                                    <p class="sub header">Sate (240 Tusuk)</p>
+                                </div>
+                            </div>
+                            <div class="ui content">
+                                <div class="ui two column grid center aligned divided vertically">
+                                    <div class="ui column"><div class="ui header pink">Betina</div><div class="ui tiny header">Rp. 1.500.000,-</div></div>
+                                    <div class="ui column"><div class="ui header blue">Jantan</div><div class="ui tiny header">Rp. 2.000.000,-</div></div>
+                                </div>
+                            </div>
+                            <div class="ui content">
+                                <div class="ui fluid button blue" data-kambing="super">Pesan</div>
+                            </div>
+                        </div>
+                        <div class="ui paket-kambing card center aligned raised">
+                            <div class="block-content"></div>
+                            <div class="ui content">
+                                <div class="ui yellow ribbon label">Kambing Premium</div>
+                                <span>*Rincian/kambing</span>
+                            </div>
+                            <div class="ui content center aligned px-1">
+                                <div class="ui header">
+                                    Satu Menu
+                                    <p class="sub header">Gulai Semua (90 Porsi)</p>
+                                </div>
+                                <div class="ui horizontal divider">Atau</div>
+                                <div class="ui header">
+                                    Dua Menu
+                                    <p class="sub header">Gulai (50 Porsi)</p>
+                                    <p class="sub header">Sate (150 Tusuk)</p>
+                                </div>
+                            </div>
+                            <div class="ui content">
+                                <div class="ui two column grid center aligned divided vertically">
+                                    <div class="ui column"><div class="ui header pink">Betina</div><div class="ui tiny header">Rp. 1.100.000,-</div></div>
+                                    <div class="ui column"><div class="ui header blue">Jantan</div><div class="ui tiny header">Rp. 1.500.000,-</div></div>
+                                </div>
+                            </div>
+                            <div class="ui content">
+                                <div class="ui fluid button blue" data-kambing="premium"">Pesan</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menu Tambahan -->
+        <div class="tambahan py-4 my-1">
+            <div class="ui grid one column padded">
+                <div class="column title center aligned p-0">
+                    <div class="ui inverted header large icon center aligned py-1">
+                        <i class="icon box"></i>
+                        Menu Tambahan
+                    </div>
+                </div>
+            </div>
+            <div class="ui grid centered container doubleing middle aligned py-1">
+                <div class="ui two column row content">
+                    <div class="ui column paket header large center aligned">
+                        Nama Tambahan
+                    </div>
+                    <div class="ui column list header large center aligned">
+                        Isi Tambahan <span></span>
+                    </div>
+                    <div class="column paket">
+                        <div class="ui vertical basic segment p-0">
+                            <div class="ui circular segment yellow" data-tambahan="a">
+                                <div class="ui large header nama">
+                                    Paket A
+                                    <div class="ui sub header harga">Rp. 12.000,-</div>
+                                </div>
+                                <div class="ui tiny header">Per Kotak</div>
+                            </div>
+                        </div>
+                        <div class="ui vertical basic segment p-0">
+                            <div class="ui circular segment olive" data-tambahan="b">
+                                <div class="ui large header nama">
+                                    Paket B
+                                    <div class="ui sub header harga">Rp. 16.000,-</div>
+                                </div>
+                                <div class="ui tiny header">Per Kotak</div>
+                            </div>
+                        </div>
+                        <div class="ui vertical basic segment p-0">
+                            <div class="ui circular segment green" data-tambahan="c">
+                                <div class="ui large header nama">
+                                    Paket C
+                                    <div class="ui sub header harga">Rp. 20.000,-</div>
+                                </div>
+                                <div class="ui tiny header">Per Kotak</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column list">
+                        <div class="ui raised segment grid-d" data-target-tambahan="a">
+                            <div class="item">
+                                <img class="ui micro image" src="aset/gambar/ilustrasi-kecil/011-rice-1.png">
+                                <div class="ui header tiny">
+                                    Nasi
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="ui micro image" src="aset/gambar/ilustrasi-kecil/027-salad-1.png">
+                                <div class="ui header tiny">
+                                    Sayur Capcay
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="ui micro image" src="aset/gambar/ilustrasi-kecil/021-chili-1.png">
+                                <div class="ui header tiny">
+                                    Sambal
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="ui micro image" src="aset/gambar/ilustrasi-kecil/019-cracker-1.png">
+                                <div class="ui header tiny">
+                                    Krupuk
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="ui micro image" src="aset/gambar/ilustrasi-kecil/031-banana-1.png">
+                                <div class="ui header tiny">
+                                    Buah
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="ui micro image" src="aset/gambar/ilustrasi-kecil/033-tissues-1.png">
+                                <div class="ui header tiny">
+                                    Tisue
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="ui micro image" src="aset/gambar/ilustrasi-kecil/022-spoon.png">
+                                <div class="ui header tiny">
+                                    Sendok
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui raised segment grid-d" data-target-tambahan="b">
+                            <div class="item">
+                                <img class="ui micro image" src="aset/gambar/ilustrasi-kecil/037-cucumber-slice-1.png">
+                                <div class="ui header tiny">
+                                    Acar
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="ui micro image" src="aset/gambar/ilustrasi-kecil/034-spinach.png">
+                                <div class="ui header tiny">
+                                    Lalaban
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui raised segment grid-d" data-target-tambahan="c">
+                            <div class="item">
+                                <img class="ui micro image" src="aset/gambar/ilustrasi-kecil/015-potato-3.png">
+                                <div class="ui header tiny">
+                                    Kentang
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="ui micro image" src="aset/gambar/ilustrasi-kecil/041-pudding-1.png">
+                                <div class="ui header tiny">
+                                    Puding
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui horizontal divider header huge">Atau</div>
+        <!-- Jual Kambing Hidup -->
+        <div class="kambing-hidup py-4 my-1">
+            <div class="ui one column grid padded">
+                <div class="ui column">
+                    <div class="ui header large icon center aligned py-1">
+                        <i class="icon sheep"></i>
+                        Kambing Hidup
+                    </div>
+                </div>
+            </div>
+            <div class="ui grid centered container">
+                <div class="ui fourteen wide column">
+                    <div class="ui cards centered py-1 flex-wrap stackable">
+                        <div class="ui paket-kambing-hidup card center aligned raised">
+                            <div class="block-content"></div>
+                            <div class="ui content">
+                                <div class="ui orange ribbon label">Kambing H1</div>
+                                <span>*Rincian/kambing</span>
+                            </div>
+                            <div class="ui content desc grid-d px-1">
+                                <div class="ui small header">Bobot</div>
+                                <div class="ui sub header">(89Kg - 99Kg+)</div>
+                                <div class="ui small header">Jenis</div>
+                                <div class="ui sub header">Kambing Eta</div>
+                            </div>
+                            <div class="ui content">
+                                <div class="ui two column grid center aligned divided vertically">
+                                    <div class="ui column"><div class="ui header pink">Betina</div><div class="ui tiny header">Rp. 2.400.000,-</div></div>
+                                    <div class="ui column"><div class="ui header blue">Jantan</div><div class="ui tiny header">Rp. 2.800.000,-</div></div>
+                                </div>
+                            </div>
+                            <div class="ui content">
+                                <div class="ui fluid button blue" data-kambing="super">Pesan</div>
+                            </div>
+                        </div>
+                        <div class="ui paket-kambing-hidup card center aligned raised">
+                            <div class="block-content"></div>
+                            <div class="ui content">
+                                <div class="ui violet ribbon label">Kambing H2</div>
+                                <span>*Rincian/kambing</span>
+                            </div>
+                            <div class="ui content desc grid-d px-1">
+                                <div class="ui small header">Bobot</div>
+                                <div class="ui sub header">(59Kg - 70Kg+)</div>
+                                <div class="ui small header">Jenis</div>
+                                <div class="ui sub header">Kambing Garut</div>
+                            </div>
+                            <div class="ui content">
+                                <div class="ui two column grid center aligned divided vertically">
+                                    <div class="ui column"><div class="ui header pink">Betina</div><div class="ui tiny header">Rp. 1.500.000,-</div></div>
+                                    <div class="ui column"><div class="ui header blue">Jantan</div><div class="ui tiny header">Rp. 2.000.000,-</div></div>
+                                </div>
+                            </div>
+                            <div class="ui content">
+                                <div class="ui fluid button blue" data-kambing="super">Pesan</div>
+                            </div>
+                        </div>
+                        <div class="ui paket-kambing-hidup card center aligned raised">
+                            <div class="block-content"></div>
+                            <div class="ui content">
+                                <div class="ui purple ribbon label">Kambing H3</div>
+                                <span>*Rincian/kambing</span>
+                            </div>
+                            <div class="ui content desc grid-d px-1">
+                                <div class="ui small header">Bobot</div>
+                                <div class="ui sub header">(40Kg - 49Kg+)</div>
+                                <div class="ui small header">Jenis</div>
+                                <div class="ui sub header">Kambing Sumba</div>
+                            </div>
+                            <div class="ui content">
+                                <div class="ui two column grid center aligned divided vertically">
+                                    <div class="ui column"><div class="ui header pink">Betina</div><div class="ui tiny header">Rp. 1.100.000,-</div></div>
+                                    <div class="ui column"><div class="ui header blue">Jantan</div><div class="ui tiny header">Rp. 1.500.000,-</div></div>
+                                </div>
+                            </div>
+                            <div class="ui content">
+                                <div class="ui fluid button blue" data-kambing="premium"">Pesan</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimoni -->
+        <div class="ui testimoni grid one column celled my-2">
+            <div class="ui column">
+                <div class="ui container grid centered two column divided stackable">
+                    <div class="ui column p-4 center aligned">
+                        <div class="ui header">
+                            Testimoni Kami
+                        </div>
+                        <div class="blockquote-image grid-d">
+                            <div class="quote-content grid-d">
+                                <div class="quote-image">
+                                    <img alt="Nama Ku" class="ui image circular" data-id="q1" src="https://semantic-ui.com/images/avatar2/small/rachel.png">
+                                </div>
+                                <div class="ui small header">Nama Ku</div>
+                            </div>
+                            <div class="quote-content grid-d">
+                                <div class="quote-image">
+                                    <img alt="Nama Mu" class="ui image circular" data-id="q2" src="https://semantic-ui.com/images/avatar2/large/kristy.png">
+                                </div>
+                                <div class="ui small header">Nama Mu</div>
+                            </div>
+                            <div class="quote-content grid-d">
+                                <div class="quote-image">
+                                    <img alt="Nama Semua" class="ui image circular" data-id="q3" src="https://semantic-ui.com/images/avatar2/small/lindsay.png">
+                                </div>
+                                <div class="ui small header">Nama Semua</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui column p-4 grid-d" id="quote-text-column">
+                        <i class="quote left icon"></i>
+                        <blockquote class="grid-d">
+                            <h2 class="quote" id="q1">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ducimus porro neque excepturi architecto temporibus quod harum mollitia facere nihil.
+                            </h2>
+                            <h2 class="quote" id="q2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis illo deserunt tempora aliquam magni quidem fugit quae ea voluptas cupiditate eius, natus, a, aperiam ipsum eaque molestiae consectetur perferendis mollitia?
+                            </h2>
+                            <h2 class="quote" id="q3">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente aperiam reprehenderit excepturi! Quae, minus distinctio?
+                            </h2>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="my-1">
+            <div class="ui container grid header">
+                <div class="ui column eight wide computer eight wide tablet sixteen wide mobile list  row py-4">
+                    <div class="ui column produk-kami eight wide">
+                        <div class="item">
+                            <a href="#">Menu Masakan</a>
+                        </div>
+                        <div class="item">
+                            <a href="#">Paket Aqiqah</a>
+                        </div>
+                    </div>
+                    <div class="ui column tentang-kami eight wide">
+                        <div class="item">
+                            <a href="#">Hikmah Aqiqah</a>
+                        </div>
+                        <div class="item">
+                            <a href="#">Lokasi</a>
+                        </div>
+                        <div class="item">
+                            <a href="#">Koki</a>
+                        </div>
+                        <div class="item">
+                            <a href="#">Kontak</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui column eight wide computer eight wide tablet sixteen wide mobile info row py-4">
+                    <div class="ui column eight wide computer six wide tablet eight wide mobile partnership">
+                        <h3>Partnership</h3>
+                        <img src="aset/gambar/logo/human-initiatif.png" alt="Human Initiatif" class="ui image small my-1">
+                    </div>
+                    <div class="ui column eight wide computer ten wide tablet eight wide mobile logo center aligned row">
+                        <img src="aset/gambar/logo/logo-big-in-wthite.png" alt="Hikmah Aqiqah" class="ui image centered small">
+                        <div class="ui column sixteen wide medsos">
+                            <div class="circular basic ui large icon blue button"><i class="facebook square icon"></i></div>
+                            <div class="circular basic ui large icon teal button"><i class="twitter icon"></i></div>
+                            <div class="circular basic ui large icon positive button"><i class="whatsapp icon"></i></div>
+                            <div class="circular basic ui large icon instagram button"><i class="instagram icon"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <small id="copyright">&copy; <span></span> Copyright, Hikmah Aqiqah</small>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="aset/framework/jquery.min.js"></script>
+<script src="aset/framework/semantic-ui.min.js"></script>
+<script src="aset/plugin/Morphext/morphext.min.js"></script>
+<script src="aset/plugin/Morphist/morphist.min.js"></script>
+<script src="aset/core/js/utilitas.js"></script>
+<script src="aset/core/js/inti.js"></script>
+<script src="aset/page/js/utama.js"></script>
+</html>
